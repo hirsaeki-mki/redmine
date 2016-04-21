@@ -18,7 +18,11 @@
 require 'redmine/core_ext'
 
 begin
-  require 'rmagick' unless Object.const_defined?(:Magick)
+  unless Object.const_defined?(:Magick)
+    require 'rubygems'
+    gem PLATFORM == 'java' ? 'rmagick4j' : 'rmagick'
+    require 'RMagick'
+  end
 rescue LoadError
   # RMagick is not available
 end
