@@ -23,6 +23,8 @@ gem "rails-html-sanitizer", ">= 1.0.3"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin, :jruby]
+# rbpdf not completely support rmagick4j. for customizing gem in Gemfile.local, commented out from Gemfile.
+# gem "rbpdf", "~> 1.19.0"
 
 # Optional gem for LDAP authentication
 group :ldap do
