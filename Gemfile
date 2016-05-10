@@ -45,8 +45,6 @@ platforms :mri, :mingw, :x64_mingw do
   group :markdown do
     gem "redcarpet", "~> 3.3.2"
   end
-  # rbpdf not completely support RMagick4J
-  gem "rbpdf", "~> 1.19.0"
 end
 
 platforms :jruby do
